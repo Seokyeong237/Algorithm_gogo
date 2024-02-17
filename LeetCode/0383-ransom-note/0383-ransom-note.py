@@ -24,9 +24,6 @@ class Solution(object):
             else:
                 dic1[key] = count
             
-        print(dic)
-        print(dic1)
-            
         for i in ransomNote:
             if dic.get(i) > dic1.get(i):
                 return False
