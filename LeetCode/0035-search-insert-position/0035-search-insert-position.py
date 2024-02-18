@@ -8,13 +8,6 @@ class Solution(object):
         start = 0
         end = len(nums)-1
         
-        # mid = 1
-        # 3 > 2: -> start = 0, end = 0
-        # mid = 0
-        # 1 < 2: -> start = 1, end = 0
-        # mid = 3
-        # 6 < 7: -> start = 4, end = 3
-        
         while start <= end:
             mid = int((start + end) / 2)
             if nums[mid] > target:
