@@ -1,7 +1,6 @@
 import random
 
 def solution(cards):
-    answer = 0
     isOpened = [False] * len(cards)
     rest = []
     score = []
@@ -33,8 +32,7 @@ def solution(cards):
         return 0
     
     score.sort()
-    answer = score[-1] * score[-2]
-    return answer
+    return score[-1] * score[-2]
 
     
         
