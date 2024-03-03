@@ -10,7 +10,6 @@ result = []
 dx = [0, 0, 1, -1, -1, 1, -1, 1]
 dy = [1, -1, 0, 0, 1, -1, -1, 1]
 
-
 def dfs(x, y):
     visited[x][y] = True
     for i in range(8):
@@ -26,7 +25,6 @@ def start(h, w):
         for j in range(w):
             if not visited[i][j] and maps[i][j] == 1:
                 cnt += 1
-                # result.append(cnt)
                 dfs(i, j)
     return cnt
 
