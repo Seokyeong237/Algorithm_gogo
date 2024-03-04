@@ -6,10 +6,10 @@ def solution(nums):
         dic[i] += 1
         
     sorted_dic = dict(sorted(dic.items(), key= lambda item:item[1]))
-    print(sorted_dic)
     
     # 1. 서로 다른 숫자 종류 >= cnt -> return cnt
-    # 2. 서로 다른 숫자 종류 < cnt -> return cnt -1
+    # 2. 서로 다른 숫자 종류 - cnt == 1 -> return cnt -1
+    # 3. 서로 다른 숫자 종류 - cnt > 1 -> return 서로 다른 숫자 종류
 
     if len(sorted_dic.keys()) >= cnt:
         return cnt
